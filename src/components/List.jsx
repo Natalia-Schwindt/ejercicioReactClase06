@@ -1,4 +1,3 @@
-// import { tasks } from '../dataBase/data'
 import TasksList from './TasksList'
 
 const List = ({tasks}) => {
@@ -13,10 +12,10 @@ const List = ({tasks}) => {
           <>
           <p>Tienes {pendingTasks} tareas pendientes</p>
           {tasks.map(task => (
-            <TasksList key={task.id} task={task}/>
-      ))}
-      </>
-  )}
+          <TasksList key={task.id} task={task}/>
+        ))}
+        </>
+      )}
     </div>
   );
 };

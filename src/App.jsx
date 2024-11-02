@@ -1,12 +1,19 @@
 import './App.css'
+import Accordion from './components/Accordion'
+import Count from './components/Count'
 import List from './components/List'
 import { tasks } from './dataBase/data'
+import  Title from './components/Title'
+
 
 function App() {
 
   return (
       <div>
         <List tasks={tasks}/>
+        <Title />
+        <Count />
+        <Accordion/>
       </div>
   )
 }
@@ -14,7 +21,5 @@ function App() {
 export default App
 
 //Limpiar el proyecto 
-
-//mostrar la cantidad de tareas You have "4" pending tasks, el 4 tiene que ser dinamico. 
 
 //Dar estilos con CSS.
