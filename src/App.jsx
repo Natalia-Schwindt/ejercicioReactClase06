@@ -5,6 +5,8 @@ import List from './components/List';
 import { tasks } from './dataBase/data';
 import  Title from './components/Title';
 import Quiz from './components/Quiz';
+import CarrouselImage from './components/CarrouselImage';
+import TrafficLight from './components/TrafficLight';
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
         <Count />
         <Accordion/>
         <Quiz />
+        <CarrouselImage />
+        <TrafficLight />
       </div>
   )
 }
