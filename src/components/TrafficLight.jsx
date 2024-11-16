@@ -4,11 +4,12 @@ import Light from "./Light"
 const TrafficLight = () => {
 
 const [active, setActive] = useState('grey')
+
   return (
     <div>
-     <Light onClick={()=>setActive('red')} color='red'/>
-     <Light onClick={()=>setActive('yellow')} color='yellow'/>
-     <Light onClick={()=>setActive('green')} color='green'/>      
+     <Light isActive={active === 'red'} handleLight={()=>setActive('red')} color='red'/>
+     <Light isActive={active === 'yellow'} handleLight={()=>setActive('yellow')} color='yellow'/>
+     <Light isActive={active === 'green'} handleLight={()=>setActive('green')} color='green'/>      
     </div>
   )
 }

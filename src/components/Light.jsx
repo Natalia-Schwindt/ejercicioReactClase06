@@ -1,9 +1,10 @@
-const Light = ({color}) => {
+const Light = ({color, handleLight, isActive}) => {
 
   return (
     <div>
-      <div  style={{
-          backgroundColor: color,
+      <div onClick={handleLight} style={{
+          backgroundColor: isActive ? color : 'grey',
+          boxShadow: isActive ? `0 0 15px ${color}` : 'none',
           width: '80px',
           height: '80px',
           borderRadius: '50%',
